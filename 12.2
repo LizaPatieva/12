@@ -1,0 +1,66 @@
+#include <iostream>; //Подключение библиотеки iostream
+using namespace std;
+int main (void) //Точка входа в программу
+{
+  char c; //Назначение переменной c
+  int N; //Назначение переменной N
+  cout<<"Направление:"; //Выводим на экран
+  cin>>c;  //Вводим переменную c
+  cout<<"Команда:"; //Выводим на экран
+  cin>>N;  //Вводим переменную N
+  switch (c) {
+    case 'С':
+     switch (n){
+      case 1:
+       cout<<"З"; 
+       break;
+      case 0:
+       cout<<"С"; 
+       break;
+      case -1:
+       cout<<"В"; 
+       break;
+       }
+      break;
+    case 'В':
+     switch (N){
+      case 1:
+       cout<<"С"; 
+       break;
+      case 0:
+       cout<<"В";
+       break;
+      case -1:
+       cout<<"Ю";
+       break;
+       }
+       break;
+      case 'Ю':
+     switch (N){
+      case 1:
+       cout<<"В";
+       break;
+      case 0:
+       cout<<"Ю";
+       break;
+      case -1:
+       cout<<"З";
+       break;
+       }
+       break;
+      case 'З':
+     switch (N){
+      case 1:
+       cout<<"Ю";
+       break;
+      case 0:
+       cout<<"З";
+       break;
+      case -1:
+       cout<<"С";
+       break;
+       }
+  }
+cout<<c; //Выводим результат на экран
+return 0; //Возврат целочисленного значения перед завершением функции
+}
