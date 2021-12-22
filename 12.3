@@ -1,0 +1,107 @@
+#include <iostream>; //Подключение библиотеки iostream
+using namespace std;
+int main (void) //Точка входа в программу
+{
+  int N; //Назначение переменной N
+  cout<<"N="; //Выводим на экран
+  cin>>N; //Вводим переменную N
+  
+  if(N/10 ==1) //Вычисляем значение выражения чисел от 10 до 19 и сравниваем с константами ниже
+   switch(N){
+   case 10:
+    cout<<"десять учебных зданий";
+    break;
+   case 11:
+    cout<<"одинадцать учебных зданий";
+    break;
+   case 12:
+    cout<<"двенадцать учебных зданий";
+    break;
+   case 13:
+    cout<<"тринадцать учебных зданий";
+    break;
+   case 14:
+    cout<<"четырнадцать учебных зданий";
+    break;
+   case 15:
+    cout<<"пятнадцать учебных зданий";
+    break;
+   case 16:
+    cout<<"шестнадцать учебных зданий";
+    break;
+   case 17:
+    cout<<"семнадцать учебных зданий";
+    break;
+   case 18:
+    cout<<"восемнадцать учебных зданий";
+    break;
+   case 19:
+    cout<<"девятнадцать учебных зданий";
+    break;
+  }
+  else 
+  {
+  switch (N/10) //Выделяем десятки при помощи целочисленного деления
+  {
+  case 2:
+    cout<<"двадцать";
+    break;
+   case 3:
+    cout<<"тридцать";
+    break;
+   case 4:
+    cout<<"сорок";
+    break;
+   }
+   switch (N%10) //Вычисляем единицы при помощи вычисления остатка
+   {
+   case 1:
+    cout<<"одно";
+    break;
+   case 2:
+    cout<<"два";
+    break;
+   case 3:
+    cout<<"три";
+    break;
+   case 4:
+    cout<<"четыре";
+    break;
+   case 5:
+    cout<<"пять";
+    break;
+   case 6:
+    cout<<"шесть";
+    break;
+   case 7:
+    cout<<"семь";
+    break;
+   case 8:
+    cout<<"восемь";
+    break;
+   case 9:
+    cout<<"девять";
+    break;
+  }
+  switch (N%10)
+   {
+   case 0:
+   case 5:
+   case 6:
+   case 7:
+   case 8:
+   case 9:
+     cout<<"учебных зданий";
+    break;
+   case 1:
+     cout<<"учебное здание";
+    break;
+   case 2:
+   case 3:
+   case 4:
+     cout<<"учебных здания";
+    break;
+}
+}
+return 0; //Возврат целочисленного значения перед завершением функции
+}
